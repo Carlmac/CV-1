@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+    content: '';
+}
+
+pre {
+    font-family: 'Consolas';
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#drawing {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 500px) {
+    #text-content {
+        height: 50vh;
+        overflow: auto;
+    }
+    #drawing-wrapper {
+        height: 50vh;
+    }
+    #drawing {
+        position: relative;
+        top: 50px;
+        right: 0;
+    }
+}
